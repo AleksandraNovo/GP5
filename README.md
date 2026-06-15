@@ -26,6 +26,7 @@
 <!-- TODO: добавить описание датасета с признаками -->
 
 ## Структура репозитория
+```
 GP5/  
 ├── data/ # данные (в .gitignore)  
 ├── notebooks/  
@@ -36,7 +37,8 @@ GP5/
 ├── mlruns/ # логи MLflow (в .gitignore)  
 ├── requirements.txt  
 ├── README.md  
-└── .gitignore  
+└── .gitignore
+```
 
 
 ## Модели
