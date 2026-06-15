@@ -26,17 +26,17 @@
 <!-- TODO: добавить описание датасета с признаками -->
 
 ## Структура репозитория
-GP5/
-├── data/ # данные (в .gitignore)
-├── notebooks/
-│ ├── 01_EDA.ipynb
-│ ├── 02_CNN_condition.ipynb
-│ └── 03_MLP_price.ipynb
-├── models/ # веса моделей (в .gitignore)
-├── mlruns/ # логи MLflow (в .gitignore)
-├── requirements.txt
-├── README.md
-└── .gitignore
+GP5/  
+├── data/ # данные (в .gitignore)  
+├── notebooks/  
+│ ├── 01_EDA.ipynb  
+├── 02_CNN_condition.ipynb  
+│ └── 03_MLP_price.ipynb  
+├── models/ # веса моделей (в .gitignore)  
+├── mlruns/ # логи MLflow (в .gitignore)  
+├── requirements.txt  
+├── README.md  
+└── .gitignore  
 
 
 ## Модели
