@@ -23,7 +23,40 @@
 
 ### Табличные данные — задача 2
 
-<!-- TODO: добавить описание датасета с признаками -->
+**Немного о самом сборе дата сета:**
+
+Сбор данных начался весной 2022 года в рамках проекта "AI for resource-efficient circular fashion", финансируемого Vinnova (Шведское инновационное агентство) .
+
+**Участники: Коллаборация трех организаций:**
+
+***RISE Research Institutes of Sweden AB*** (ведущий исследовательский институт) 
+
+***Wargön Innovation AB*** (эксперт в области устойчивой и циркулярной моды, координатор проекта) 
+
+***Myrorna AB*** (крупнейшая в Швеции сеть магазинов секонд-хенд, предоставившая реальные потоки товаров для разметки) 
+
+**Основные параметры которые есть в нем:**
+- filename - уникальное имя файла с изображением
+- image_type - тип фото: front (спереди) или back (сзади)
+- sizetext - описание кроя и формы: Regular (обычный), Tight (облегающий), Loose(свободный), Cropped (укороченный) и т.д.
+- stains - наличие пятен: 1 (нет), 0 (незначительные), 2 (сильные)
+- price - цена (в кронах)
+- smell - наличие запаха: None (нет), Minor (слабый), Major (сильный)
+- price_confidence - уверенность в оценке цены: High, Medium, Low (поставленная создателями датасета)
+- condition - общее состояние от 1 до 5 (5 - лучшее)
+- usage_confidence - уверенность в решении о судьбе вещи: High, Medium, Low (поставленная создателями датасета)
+- comment - свободные комментарии аннотатора
+- holes - наличие отверстий: None, Minor, Major
+- colors - список основных цветов
+- usage - рекомендуемый путь: Reuse (повторно), Repair (ремонт), Recycle (переработка), Export (экспорт), Remake (переделка), Energy recovery (сжигание)
+- type - тип одежды: Trousers, Dress, T-shirt и т.д. (всего 34+ классов)
+- damage - текстовое описание повреждения (stain, hole и т.д.)
+- styleholes - булевый признак: true - дырки запланированные (дизайн), false — дефект
+- brand - категория бренда (H&M, Nike, Not in the list и тд)
+  
+**И ещё параметры** (filename, image_type, sizetext, stains, price, smell, price_confidence, condition, usage_confidence, comment, holes, colors, usage, type, damage, styleholes, brand, season_all_seasons, season_autumn, season_spring, season_winter, category_female, category_unisex, back, front, brand_missing, description, pattern, cut, size, brandtext, pilling, damage2, damage3, damageloc, damage2loc, damage3loc, damageimage, damage2image, damage3image, weight, material, annotator, trend, station1, station2, station3) - ***всего их 37 штук***
+
+Всего *30 192* образца различных фото одежды и размер каждого изображения *224x224* пикселя (изначально в датасете удаленны фоновые изображения, оптимизированные для дальнейшей работы)
 
 ## Структура репозитория
 ```
